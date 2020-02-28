@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3,
+h5 {
+    color: slategrey;
+}
+
+p {
+    color: rgb(155, 153, 153);
+}
+
+body {
+    background: whitesmoke;
+    font-family: 'Roboto';
+}
+
+.page-wrap {
+    /* display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    margin: auto;
+    width: 90%;
+    
+
+}
+
+.video-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-vid iframe {
+    width: 700px;
+    height: 500px
+}
+
+@media only screen and (max-width: 700px) {
+
+    .page-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-vid iframe {
+        max-width: 100%;
+        height: auto
+    }
+
+    .video-item {
+        padding-top: 30px;
+    }
+}
+
+.search-page {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.search-component {
+    margin: auto;
+    width: 90%;
+}
+
+.search-component input {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 1px solid #333;
+    outline: none;
+}
+
+.search-component input:hover {
+    border: 1px solid rgb(247, 75, 75);
+}
+
+.search-component input:focus {
+    border: 1px solid rgb(247, 75, 75);
+}
