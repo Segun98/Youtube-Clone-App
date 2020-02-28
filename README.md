@@ -1,2 +1,8 @@
 # Youtube-Clone-App
-Youtube Clone App with ReactJs
+#Youtube API
+
+ReactJs
+
+PWA
+
+Link: https://youtube-clone-psi.now.sh
